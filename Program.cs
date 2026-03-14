@@ -12,6 +12,7 @@ namespace Bai15
             List<int> numbers = new List<int> { 1, 2, 2, 3, 4, 4, 5};
 
             numbers = numbers.Distinct().ToList();
+            Console.Write("Danh sach sau khi loai bo so trung: ");
             foreach (int num in numbers)
                 Console.Write(" {0} ", num);
 
