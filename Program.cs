@@ -16,6 +16,7 @@ namespace Bai20
               new Student { Id = 4, Name = "Dung", Score = 7 } };
 
             var sx = students.OrderByDescending(x => x.Score).Take(3);
+            Console.WriteLine("Top 3 sinh vien diem cao nhat:\n");
             foreach (var student in sx)
                 Console.WriteLine(student);
 
