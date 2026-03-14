@@ -17,7 +17,7 @@ namespace Bai8
 
             var SVGioi = new List<Student>();
             SVGioi = students.Where(x => x.Score >= 8).ToList();
-
+            Console.WriteLine("Danh sach sinh vien gioi la: ");
             foreach (var student in SVGioi)
                 Console.WriteLine(student);
             Console.ReadKey();
