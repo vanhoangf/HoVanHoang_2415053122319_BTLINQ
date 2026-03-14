@@ -16,7 +16,7 @@ namespace Bai13
               new Student { Id = 4, Name = "Dung", Score = 7 } };
 
             var SV = students.FirstOrDefault(x => x.Score > 7);
-            Console.WriteLine(SV);
+            Console.WriteLine("Sinh vien dau tien co diem > 7 la:\n{0}",SV);
 
             Console.ReadKey();
         }
