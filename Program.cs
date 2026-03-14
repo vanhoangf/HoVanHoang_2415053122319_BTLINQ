@@ -17,6 +17,7 @@ namespace Bai11
 
             var diem = students.Max(x => x.Score);
             var SV = students.Where(x => x.Score == diem);
+            Console.WriteLine("Sinh vien co diem cao nhat: ");
             foreach (var student in SV)
                 Console.WriteLine(student);
             Console.ReadKey();
