@@ -16,7 +16,7 @@ namespace Bai10
               new Student { Id = 4, Name = "Dung", Score = 7 } };
 
             var sx = students.OrderByDescending(x => x.Score);
-
+            Console.WriteLine("Danh sach sinh vien sap xep theo diem giam dan: ");
             foreach (var student in sx)
                 Console.WriteLine(student);
             Console.ReadKey();
