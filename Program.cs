@@ -12,6 +12,7 @@ namespace Bai19
             List<int> numbers = new List<int> { 1, 2, 2, 3, 4, 4, 5 };
 
             var xhMax = numbers.GroupBy(x => x).Where(y => y.Count() == numbers.GroupBy(c => c).Max(d => d.Count()));
+            Console.Write("Gia tri xuat hien nhieu nhat: ");
             foreach (var num in xhMax)
                 Console.Write(" {0} " , num.Key);
 
